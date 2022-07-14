@@ -1,0 +1,167 @@
+*{
+    font-family: 'Inconsolata', monospace;
+}
+
+body{
+    background-color: #FCF6BD;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #A9DEF9;
+    align-items: center;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition-timing-function: ease-out;
+    transition-duration: 450ms;
+    transition-property:font-size ;
+}
+
+nav ul li a:hover{
+    font-size: 1.1em;
+}
+
+#titrePage{
+    height: 75px;
+    width: 325px;
+    background-color: #FF99C8;
+}
+
+#titrePage h1{
+    padding-top: 20px;
+    padding-left: 125px;
+}
+
+#titreSection{
+    height: 75px;
+    width: 500px;
+    background-color: #E4C1F9;
+}
+
+#titreSection h1{
+    padding-top: 20px;
+    padding-left: 150px;
+}
+
+#section{
+    margin-left: 85px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+}
+
+.artiste{
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    background-color: #A9DEF9;
+    border: 3px solid black;
+}
+
+.nomArtiste{
+    width: 160px;
+    text-align: center;
+}
+
+.photoArtiste{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    margin: 0;
+    object-fit: cover;
+}
+
+.infoArtiste{
+    margin: auto;
+    width: 333px;
+    text-align: center;
+    background-color: #D0F4DE;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.musiqueArtiste{
+    width: 140px;
+}
+
+.musiqueArtiste div{
+    text-align: center;
+}
+
+.musiqueArtiste div a{
+    text-decoration: none;
+    color: black;
+}
+
+.musique{
+    background-color: #D0F4DE;
+    border-radius: 8px;
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    transition-property:background ;
+}
+
+.musique:hover{
+    background-color: #FF99C8;
+}
+
+@media screen and (max-width: 1300px) {
+    .artiste{
+        flex-direction: column;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        align-content: center;
+    }
+
+    #section{
+        width: 500px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #titrePage{
+        height: 75px;
+        width: 130px;
+        background-color: #FF99C8;
+    }
+    
+    #titrePage h1{
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    
+    #titreSection{
+        height: 75px;
+        width: 300px;
+        background-color: #E4C1F9;
+    }
+    
+    #titreSection h1{
+        padding: 20px;
+    }
+}
